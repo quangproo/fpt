@@ -36,6 +36,8 @@ Hệ thống có hiệu năng/giá thành rất cao
 - Dual RTX 3090 với NVLink tổng 48 GB VRAM chỉ 38 triệu, tổng số nhân CUDA bằng RTX 5090. Nhưng RTX 5090 giá 110 triệu và chỉ 32 GB VRAM
 - Mikrotik CRS309, Mellanox ConnectX4-Lx là nhưng thiết bị giá rẻ nhất mà có tính năng iSER
 
+Có khả năng tháo lắp máy chủ, tra keo tản nhiệt, nối dây mạng, tư vấn thiết bị
+
 ## Thành phần mềm
 - SAN Server:
   + Image iSCSI target
