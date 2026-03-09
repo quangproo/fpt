@@ -1,4 +1,3 @@
-<body>
 <style>
 .box_1 { display:flex; position:absolute; width:200px; height:60px; border:solid; align-items:center; justify-content:center; }
 .line_v { position:absolute; width:2px; background:black; }
@@ -6,6 +5,7 @@
 .line_iser { position:absolute; height:3px; background:blue; }
 .line_snmp { position:absolute; border-left:2px dashed darkorange; }
 </style>
+
 <h2 style="text-align:center">Sơ đồ Kiến trúc mạng</h2>
 
 <!-- Bàn cờ vua: top bottom = A1 -->
