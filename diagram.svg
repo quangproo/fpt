@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="580" font-family="sans-serif">
+
+  <!-- Tiêu đề -->
+  <text x="450" y="20" text-anchor="middle" font-size="16" font-weight="bold">Sơ đồ Kiến trúc mạng</text>
+
+  <!-- ESXi + Monitor (A4) -->
+  <rect x="30" y="30" width="240" height="120" fill="white" stroke="black"/>
+  <text x="150" y="52" text-anchor="middle" font-size="13">ESXi</text>
+  <line x1="30" y1="58" x2="270" y2="58" stroke="black"/>
+  <rect x="40" y="64" width="100" height="72" fill="white" stroke="black"/>
+  <text x="90" y="104" text-anchor="middle" font-size="13">Monitor</text>
+
+  <!-- Switch iSER (B4) -->
+  <rect x="350" y="30" width="200" height="60" fill="white" stroke="black"/>
+  <text x="450" y="65" text-anchor="middle" font-size="13">Switch iSER</text>
+
+  <!-- SAN (C4) -->
+  <rect x="650" y="30" width="200" height="60" fill="white" stroke="black"/>
+  <text x="750" y="65" text-anchor="middle" font-size="13">SAN</text>
+
+  <!-- Switch CAT6 (B3) -->
+  <rect x="350" y="200" width="200" height="60" fill="white" stroke="black"/>
+  <text x="450" y="235" text-anchor="middle" font-size="13">Switch CAT6</text>
+
+  <!-- Router (B2) -->
+  <rect x="350" y="340" width="200" height="60" fill="white" stroke="black"/>
+  <text x="450" y="375" text-anchor="middle" font-size="13">Router</text>
+
+  <!-- Internet (B1) -->
+  <rect x="350" y="480" width="200" height="60" fill="white" stroke="black"/>
+  <text x="450" y="515" text-anchor="middle" font-size="13">Internet</text>
+
+  <!-- ===== ĐƯỜNG KẾT NỐI ===== -->
+
+  <!-- ESXi ↔ Switch iSER (iSER) -->
+  <line x1="270" y1="59" x2="350" y2="59" stroke="blue" stroke-width="3"/>
+  <text x="285" y="53" font-size="11" fill="blue" font-weight="bold">iSER</text>
+
+  <!-- Switch iSER ↔ SAN (iSER) -->
+  <line x1="550" y1="59" x2="650" y2="59" stroke="blue" stroke-width="3"/>
+  <text x="578" y="53" font-size="11" fill="blue" font-weight="bold">iSER</text>
+
+  <!-- Switch iSER ↔ Switch CAT6 (dọc) -->
+  <line x1="449" y1="90" x2="449" y2="200" stroke="black" stroke-width="2"/>
+
+  <!-- ESXi ↔ A3 (dọc) -->
+  <line x1="149" y1="150" x2="149" y2="230" stroke="black" stroke-width="2"/>
+
+  <!-- A3 ↔ Switch CAT6 (ngang) -->
+  <line x1="150" y1="229" x2="350" y2="229" stroke="black" stroke-width="2"/>
+
+  <!-- SAN ↔ C3 (dọc) -->
+  <line x1="749" y1="90" x2="749" y2="230" stroke="black" stroke-width="2"/>
+
+  <!-- C3 ↔ Switch CAT6 (ngang) -->
+  <line x1="550" y1="229" x2="749" y2="229" stroke="black" stroke-width="2"/>
+
+  <!-- Switch CAT6 ↔ Router (dọc) -->
+  <line x1="449" y1="260" x2="449" y2="340" stroke="black" stroke-width="2"/>
+
+  <!-- Router ↔ Internet (dọc) -->
+  <line x1="449" y1="400" x2="449" y2="480" stroke="black" stroke-width="2"/>
+
+  <!-- SNMP: Switch iSER → Switch CAT6 (đường đứt nét cam) -->
+  <line x1="462" y1="90" x2="462" y2="200" stroke="darkorange" stroke-width="2" stroke-dasharray="6,4"/>
+  <text x="466" y="150" font-size="11" fill="darkorange" font-weight="bold">SNMP</text>
+  <!-- Mũi tên đầu -->
+  <polygon points="458,200 468,200 463,208" fill="darkorange"/>
+
+</svg>
