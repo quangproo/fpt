@@ -953,10 +953,10 @@ logfile = /var/log/pgbouncer/pgbouncer.log
 pidfile = /var/run/pgbouncer/pgbouncer.pid
 log_connections = 0
 log_disconnections = 0
-log_stats   = 1
+log_stats = 1
 stats_period = 60
-admin_users  = postgres
-stats_users  = postgres
+admin_users = postgres
+stats_users = postgres
 EOF
 sudo chown pgbouncer:pgbouncer /etc/pgbouncer/pgbouncer.ini
 sudo chmod 640 /etc/pgbouncer/pgbouncer.ini
